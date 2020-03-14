@@ -1,0 +1,50 @@
+{
+  "$id": "QueryProducts",
+  "title": "Query Products",
+  "examples": [
+    [{
+      "name": "banana",
+      "price": "0.29",
+      "stock": "20",
+      "updated": "2014-01-02"
+    },
+      {
+        "name": "melon",
+        "price": "1.01",
+        "stock": "3",
+        "updated": "2014-03-28"
+      },
+      {
+        "name": "apple",
+        "price": "1.54",
+        "stock": "22",
+        "updated": "2014-02-05"
+      }]
+  ],
+  "type": "object",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "[0-9]+"
+      },
+      "price": {
+        "type": "string",
+        "minLength": 1
+      },
+      "stock": {
+        "type": "string",
+        "minLength": 1
+      },
+      "updated": {
+        "type": "string",
+        "minLength": 1
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
